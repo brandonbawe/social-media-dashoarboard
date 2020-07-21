@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ <link rel="stylesheet" href="./assets/lighttheme.css" id="theme">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  
+  <title>Frontend Mentor | Social Media Dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div>
+        <h2 class="white">Social Media Dashboard </h2>
+       <p class="gray">Total Followers: 23,004</p>
+      </div>
+      <div class="theme-toggle">
+       <p class="gray" id="darkmode">Dark Mode</p>
+       <label class="switch" >
+        <input type="checkbox" checked  id="button">
+       
+        <span class="slider round"></span>
+      </label>
+    </div>
+    
+  </header>
+  <section class="social-media-stats">
+    <div class="outer-div facebook">
+      <div class="user-div">
+        <div class="icon-username">
+          <img src="./images/icon-facebook.svg" alt="facebook-icon">
+          <span class="gray">@nathanf</span>
+        </div>
+        <div class="followers">
+          <p class="white">1987</p>
+          <p class="gray">Followers</p>
+        </div>
+        
+        <p class="followers-today green"><i class="fa fa-caret-up" aria-hidden="true"></i> 12 Today</p>
+      </div>
+    </div>
+    <div class="outer-div twitter">
+      <div class="user-div">
+        <div class="icon-username">
+          <img src="./images/icon-twitter.svg" alt="twitter icon">
+          <span class="gray">@nathanf</span>
+        </div>
+        <div class="followers">
+          <p class="white">1044</p>
+          <p class="gray">Followers</p>
+        </div>
+        <p class="followers-today green"><i class="fa fa-caret-up" aria-hidden="true"></i> 99 Today</p>
+      </div>
+    </div>
+    <div class="outer-div instagram">
+      <div class="user-div">
+        <div class="icon-username">
+          <img src="./images/icon-instagram.svg" alt="instagram icon">
+          <span class="gray">@realnathanf</span>
+        </div>
+        <div class="followers">
+          <p class="white">11k</p>
+          <p class="gray">Followers</p>
+        </div>
+        <p class="followers-today green"><i class="fa fa-caret-up" aria-hidden="true"></i> 1099 Today</p>
+      </div>
+    </div>
+    <div class="outer-div youtube">
+      <div class="user-div">
+        <div class="icon-username">
+          <img src="./images/icon-youtube.svg" alt="twitter icon">
+          <span class="gray">Nathan F.</span>
+        </div>
+
+        <div class="followers">
+          <p class="white">8239</p>
+          <p class="gray">Subscribers</p>
+        </div>
+        <p class="followers-today red"><i class="fa fa-caret-down" aria-hidden="true"></i> 144 Today</p>
+      </div>
+    </div>
+  </section>
+  <h2 class="overview-heading">Overview - Today</h2>
+  <section class="overview">
+    
+    <div class="overview-divs">
+      <div class="flex-item">
+        <p class="gray">Page Views</p>
+        <img src="./images/icon-facebook.svg" alt="facebook icon">
+      </div>
+      <div class="flex-item">
+        <p class="white">89</p>
+        <p class="green"><i class="fa fa-caret-up" aria-hidden="true"></i> 3%</p>
+      </div>
+    </div>
+    <div class="overview-divs">
+      <div class="flex-item">
+        <p class="gray">Likes</p>
+        <img src="./images/icon-facebook.svg" alt="facebook icon">
+      </div>
+      <div class="flex-item">
+        <p class="white">52</p>
+        <p class="red"><i class="fa fa-caret-down" aria-hidden="true"></i> 2%</p>
+      </div>
+    </div>
+    <div class="overview-divs">
+      <div class="flex-item">
+        <p class="gray">Likes</p>
+        <img src="./images/icon-instagram.svg" alt="instagram icon">
+      </div>
+      <div class="flex-item">
+        <p class="white">5462</p>
+        <p class="green"><i class="fa fa-caret-up" aria-hidden="true"></i> 2257%</p>
+      </div>
+    </div>
+    <div class="overview-divs">
+      <div class="flex-item">
+        <p class="gray">Profile</p>
+        <img src="./images/icon-instagram.svg" alt="instagram icon">
+      </div>
+      <div class="flex-item">
+        <p class="white">52k</p>
+        <p class="green"><i class="fa fa-caret-up" aria-hidden="true"></i> 1375%</p>
+      </div>
+    </div>
+
+
+
+    <div class="overview-divs">
+      <div class="flex-item">
+        <p class="gray">Retweets</p>
+        <img src="./images/icon-twitter.svg" alt="twitter icon">
+        
+      </div>
+      <div class="flex-item">
+        <p class="white">87</p>
+        <p class="green"><i class="fa fa-caret-up" aria-hidden="true"></i> 303%</p>
+      </div>
+    </div>
+    <div class="overview-divs">
+      <div class="flex-item">
+        <p class="gray">Likes</p>
+        <img src="./images/icon-twitter.svg" alt="twitter icon">
+      </div>
+      <div class="flex-item">
+        <p class="white">507</p>
+        <p class="green"><i class="fa fa-caret-up" aria-hidden="true"></i> 553%</p>
+      </div>
+    </div>
+    <div class="overview-divs">
+      <div class="flex-item">
+        <p class="gray">Likes</p>
+        <img src="./images/icon-youtube.svg" alt="youtube icon">
+        
+      </div>
+      <div class="flex-item">
+        <p class="white">107</p>
+        <p class="red"><i class="fa fa-caret-down" aria-hidden="true"></i> 19%</p>
+      </div>
+    </div>
+    <div class="overview-divs">
+      <div class="flex-item">
+        <p class="gray">Total Views</p>
+        <img src="./images/icon-youtube.svg" alt="youtube icon">
+       
+      </div>
+      <div class="flex-item">
+        <p class="white">1407</p>
+        <p class="red"><i class="fa fa-caret-down" aria-hidden="true"></i> 2257%</p>
+      </div>
+    </div>
+    
+  </section>
+
+<!----  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Damue Brandon</a>.
+  </div> -->
+<script src="./assets/app.js"></script>
+</body>
+</html>
